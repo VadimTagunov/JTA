@@ -12,6 +12,7 @@ import java.nio.Buffer;
  * Created by Vadim on 27.03.2017.
  */
 class ReadAndWrite {
+// nemnogo test
     private String FILENAME = null;
 
     public ReadAndWrite(String address) {
