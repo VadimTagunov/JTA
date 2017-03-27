@@ -13,6 +13,7 @@ import java.nio.Buffer;
  */
 class ReadAndWrite {
 // nemnogo test
+// pizdato!!!
     private String FILENAME = null;
 
     public ReadAndWrite(String address) {
