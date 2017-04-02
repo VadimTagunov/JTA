@@ -15,18 +15,17 @@ class TextSwitcher {
 		this.symbol = c;
 	}
 	
-	public void changeChar() throws NullPointerException {
+	public void changeChar(String textInput) throws NullPointerException {
+		words = textInput.split(" ");
 		for (int a = 0; a < words.length; a++) {
 			if (words[a].length() < indexOfChar) {
 				StringBuilder str = new StringBuilder(words[a]);
 				str.setCharAt(indexOfChar, symbol);
-				System.out.print(words[a].toString() + " ");
+				System.out.print(str.toString() + " ");
 			}
 			else {
 				System.out.print(words[a]);
 			}
 		}
 	}
-
-
 }
