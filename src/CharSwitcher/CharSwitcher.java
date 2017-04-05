@@ -32,11 +32,14 @@ public class CharSwitcher {
 		words = text.split(" ");
 		for (int i = 0; i < words.length; i++) {
 			if (words[i].length() >= (order)){
-				System.out.println(words[i].substring(0, order) + symbol + words[i].substring(order + 1));
+				words[i] = words[i].substring(0, order) + symbol + words[i].substring(order + 1);
 			}
 			else {
-				System.out.println(words[i]);
+				
 			}
+		}
+		for (int i = 0; i < words.length; i++) {
+			System.out.print(words[i] + " ");
 		}
 	}
 }
