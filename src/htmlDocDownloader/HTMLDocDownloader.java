@@ -8,6 +8,7 @@ import java.util.regex.*;
 public class HTMLDocDownloader {
 	
 	private String webAddress = null;
+	private String regEx = "(http|https):\\/\\/[a-z]+.[a-z]+.[a-z]+\\/";
 	
 	public HTMLDocDownloader() {
 		
@@ -35,7 +36,7 @@ public class HTMLDocDownloader {
                 	
 //                	need to compile RIGHT REGEX!!!
                 	
-                	Pattern p = Pattern.compile("^[^#?]*(#.*)");
+                	Pattern p = Pattern.compile(regEx);
        	         	Matcher m = p.matcher(words[i+1]);
                 	if (m.find()) {
                 		webAddress = words[i+1];
